@@ -204,18 +204,8 @@
         <form action="submit.php" method="post">
             
             <div class="form-group">
-                <label for="name">學生姓名</label>
+                <label for="name">姓名</label>
                 <input type="text" id="name" name="name" placeholder="請輸入真實姓名" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">電子郵件</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">家長聯繫電話</label>
-                <input type="tel" id="phone" name="phone" placeholder="格式：0912345678" pattern="[0-9]{10}" required>
             </div>
 
             <div class="form-group">
@@ -225,6 +215,39 @@
                     <label><input type="radio" name="gender" value="女"> 女</label>
                     <label><input type="radio" name="gender" value="其他"> 其他</label>
                 </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">年齡</label>
+                <input type="number" id="age" name="age" min="12" max="18" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">電子郵件</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">聯繫電話</label>
+                <input type="tel" id="phone" name="phone" placeholder="格式：0912345678" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label>活動偏好（可複選）</label>
+                <input type="checkbox" name="activities[]" value="戶外冒險"> 戶外冒險
+                <input type="checkbox" name="activities[]" value="科技體驗"> 科技體驗
+                <input type="checkbox" name="activities[]" value="團隊活動"> 團隊活動
+                <input type="checkbox" name="activities[]" value="星空回憶"> 星空回憶
+            </div>
+
+            <div class="form-group">
+                <label>餐點需求：</label>
+                <select name="meal" required>
+                    <option value="">請選擇</option>
+                    <option value="葷食">葷食</option>
+                    <option value="素食">素食</option>
+                    <option value="蛋奶素">蛋奶素</option>
+                </select>
             </div>
 
             <div class="form-group">
